@@ -1,29 +1,21 @@
 {
   "name": "nodejs-news",
   "version": "1.0.0",
-  "description": "news website express.js app",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ethan-yws/nodejs-news-website.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ethan-yws/nodejs-news-website/issues"
-  },
-  "homepage": "https://github.com/ethan-yws/nodejs-news-website#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": ">=0.21.1",
     "body-parser": "^1.19.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.4"
   }
 }

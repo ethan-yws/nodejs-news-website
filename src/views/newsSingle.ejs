@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Aggregator</title>
+    <title>News Aggregator</title> 
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
@@ -14,18 +14,14 @@
     </header>
 
     <div class="wrapper">
-        <div class="news">
-            <% if(articles != null) { %>
-            <% articles.forEach(function(article, index) { %>
-                <a href="/article/<%- article.id %>" class="news__card">
-                    <img src="<%- article.thumbnail_url %>" alt="<%- article.title.rendered %>">
+        <div class="news-single">
+                <a href="/">&larr;- Back</a>
+                <% if(article != null) { %>
                     <h2><%- article.title.rendered %></h2>
-                    <p><%- article.excerpt.rendered %></p>
-                </a>
-            <% }) %>
-            <% } else { %>
-                No posts found.
-            <% } %>
+                    <p><%- article.content.rendered %></p>
+                <% } else { %>
+                    No posts found.
+                <% } %>
         </div>
     </div>  
 </body>
